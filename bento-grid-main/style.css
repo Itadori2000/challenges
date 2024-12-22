@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1eeee;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 13rem 13rem 13rem;
+  grid-template-areas: "column1 column2 column3" "column1 column2 column3" "column1 column4 column4";
+  gap: 1rem;
+  max-width: 960px;
+  margin: 20px auto;
+}
+.bento-grid > * {
+  display: grid;
+  gap: 1rem;
+}
+.bento-grid .columns-one {
+  grid-area: column1;
+}
+.bento-grid .columns-one .create {
+  background-color: hsl(31, 66%, 93%);
+  border-radius: 12px;
+}
+.bento-grid .columns-one .content {
+  background-color: hsl(39, 100%, 71%);
+  border-radius: 12px;
+}
+.bento-grid .columns-two {
+  grid-area: column2;
+}
+.bento-grid .columns-two .media {
+  background-color: hsl(256, 67%, 59%);
+  border-radius: 12px;
+}
+.bento-grid .columns-two .inside-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.bento-grid .columns-two .inside-element .manage {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+.bento-grid .columns-two .inside-element .posting {
+  background-color: hsl(39, 100%, 71%);
+  border-radius: 12px;
+}
+.bento-grid .columns-three {
+  grid-area: column3;
+}
+.bento-grid .columns-three .schedule {
+  background-color: hsl(254, 88%, 90%);
+  border-radius: 12px;
+}
+.bento-grid .columns-four {
+  grid-area: column4;
+}
+.bento-grid .columns-four .inside-element2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.bento-grid .columns-four .inside-element2:nth-child(1) {
+  grid-template-columns: 0.95fr 2fr;
+  gap: 1rem;
+}
+.bento-grid .columns-four .inside-element2 .audience {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+.bento-grid .columns-four .inside-element2 .followers {
+  background-color: hsl(256, 67%, 59%);
+  border-radius: 12px;
+}
+
+@media (max-width: 570px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas: "column2" "column3" "column4" "column1";
+  }
+  .columns-one {
+    grid-template-columns: 1fr 1fr;
+  }
+  .inside-element,
+  .columns-four,
+  .columns-one {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
