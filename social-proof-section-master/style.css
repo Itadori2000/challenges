@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", serif;
+}
+
+.league-spartan-small {
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-spartan-medium {
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.league-spartan-large {
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+}
+.main-container .pattern-top-img {
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  left: 0;
+  top: 0;
+}
+.main-container .container .products {
+  text-align: center;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+.main-container .container .products h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: hsl(300, 43%, 22%);
+  padding-top: 4rem;
+}
+.main-container .container .products p {
+  font-size: 20px;
+  color: hsl(303, 10%, 53%);
+  padding: 0 7px;
+}
+.main-container .container .rated-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .container .rated-container .reviews, .main-container .container .rated-container .report-guru, .main-container .container .rated-container .best-tech {
+  text-align: center;
+  background-color: hsl(300, 24%, 96%);
+  padding: 16px;
+  width: 340px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+.main-container .container .rated-container .reviews .star-icon, .main-container .container .rated-container .report-guru .star-icon, .main-container .container .rated-container .best-tech .star-icon {
+  margin: 2px;
+}
+.main-container .container .rated-container .reviews .star-icon i, .main-container .container .rated-container .report-guru .star-icon i, .main-container .container .rated-container .best-tech .star-icon i {
+  color: #F0984B;
+  font-size: 15px;
+  margin: 0px 2px 13px;
+}
+.main-container .container .rated-container .reviews p, .main-container .container .rated-container .report-guru p, .main-container .container .rated-container .best-tech p {
+  color: hsl(300, 43%, 22%);
+  font-size: 18px;
+}
+.main-container .buyer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 3rem;
+  position: relative;
+}
+.main-container .buyer-container .pattern-img-bottom {
+  position: absolute;
+  width: 100%;
+  height: 130vh;
+}
+.main-container .buyer-container .smith, .main-container .buyer-container .roberts, .main-container .buyer-container .wallace {
+  background-color: hsl(300, 43%, 22%);
+  width: 340px;
+  padding: 35px 40px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.main-container .buyer-container .smith .profile-container, .main-container .buyer-container .roberts .profile-container, .main-container .buyer-container .wallace .profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.main-container .buyer-container .smith .profile-container .profile img, .main-container .buyer-container .roberts .profile-container .profile img, .main-container .buyer-container .wallace .profile-container .profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.main-container .buyer-container .smith .profile-container .info, .main-container .buyer-container .roberts .profile-container .info, .main-container .buyer-container .wallace .profile-container .info {
+  margin-left: 30px;
+}
+.main-container .buyer-container .smith .profile-container .info h4, .main-container .buyer-container .roberts .profile-container .info h4, .main-container .buyer-container .wallace .profile-container .info h4 {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+.main-container .buyer-container .smith .profile-container .info p, .main-container .buyer-container .roberts .profile-container .info p, .main-container .buyer-container .wallace .profile-container .info p {
+  color: hsl(333, 80%, 67%);
+  font-size: 18px;
+}
+.main-container .buyer-container .smith p, .main-container .buyer-container .roberts p, .main-container .buyer-container .wallace p {
+  color: hsl(300, 24%, 96%);
+  line-height: 1.2;
+  font-size: 17px;
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .main-container .pattern-top-img {
+    width: 45%;
+    height: 55vh;
+  }
+  .main-container .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem 0 2rem;
+  }
+  .main-container .container .products {
+    width: 40%;
+    height: 40vh;
+    /* background-color: #F0984B; */
+    text-align: left;
+    padding: 0 0 0 9rem;
+  }
+  .main-container .container .products h1 {
+    font-size: 55px;
+    padding: 2rem 4rem 0.4rem 0;
+  }
+  .main-container .container .rated-container {
+    width: 50%;
+    height: 40vh;
+    /* background-color: aqua; */
+    padding: 2rem 14rem 2rem 0;
+    margin: 0;
+  }
+  .main-container .container .rated-container .reviews, .main-container .container .rated-container .report-guru, .main-container .container .rated-container .best-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 2.5rem;
+  }
+  .main-container .container .rated-container .reviews .star-icon, .main-container .container .rated-container .report-guru .star-icon, .main-container .container .rated-container .best-tech .star-icon {
+    transform: translate(-10px, 5px);
+  }
+  .main-container .container .rated-container .reviews {
+    transform: translate(4rem, 27px);
+  }
+  .main-container .container .rated-container .report-guru {
+    transform: translate(6.6rem, 25px);
+  }
+  .main-container .container .rated-container .best-tech {
+    transform: translate(9rem, 22px);
+  }
+  .main-container .buyer-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateX(3rem);
+    margin: 0;
+  }
+  .main-container .buyer-container .pattern-img-bottom {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: -16rem;
+  }
+  .main-container .buyer-container .smith {
+    transform: translate(7rem, 10px);
+  }
+  .main-container .buyer-container .roberts {
+    transform: translate(-50px, 30px);
+  }
+  .main-container .buyer-container .wallace {
+    transform: translate(-12rem, 48px);
+  }
+}/*# sourceMappingURL=style.css.map */
